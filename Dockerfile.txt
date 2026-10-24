@@ -1,0 +1,10 @@
+
+FROM eclipse-temurin:21-jdk
+
+WORKDIR /app
+
+COPY pooja.java .
+
+RUN javac pooja.java
+
+CMD ["java", "pooja"]
